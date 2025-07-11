@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Go2Repair | Local Repairs You Can Trust</title>
   <style>
     body {
@@ -10,41 +10,48 @@
       margin: 0;
       background-color: #f4f4f4;
       color: #333;
-    <header>
-  <img src="logo.png" alt="Go2Repair Logo" style="height: 60px; vertical-align: middle;">
-  <h2 style="display: inline-block; margin-left: 10px; vertical-align: middle;">Go2Repair</h2>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="https://www.facebook.com/Go2Repair" target="_blank">Facebook</a>
-  </nav>
     }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
     nav a {
       color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+
     .hero {
       padding: 60px 20px;
       text-align: center;
       background-color: #007bff;
       color: white;
     }
-    .hero h1 {
-      margin-bottom: 10px;
-    }
+
     .section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     .services {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       gap: 20px;
     }
+
     .service {
       background: white;
       padding: 20px;
@@ -52,12 +59,44 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       flex: 1 1 250px;
     }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: 20px auto 0;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #222;
       color: #fff;
     }
+
     a.button {
       display: inline-block;
       margin-top: 20px;
@@ -68,6 +107,7 @@
       border-radius: 5px;
       font-weight: bold;
     }
+
     @media (max-width: 600px) {
       .services {
         flex-direction: column;
@@ -78,6 +118,7 @@
 <body>
 
 <header>
+  <img src="go2repair-logo.png" alt="Go2Repair Logo">
   <h2>Go2Repair</h2>
   <nav>
     <a href="#services">Services</a>
@@ -118,7 +159,21 @@
   <h2>Contact Us</h2>
   <p><strong>Email:</strong> contact@go2repair.co.uk</p>
   <p><strong>Facebook:</strong> <a href="https://www.facebook.com/Go2Repair" target="_blank">facebook.com/Go2Repair</a></p>
-  <p><strong>Location:</strong> Local mobile repair service – we come to you!</p>
+  <p><strong>Location:</strong> Mobile repair service – we come to you!</p>
+
+  <!-- Contact Form -->
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <input type="submit" value="Send Message">
+  </form>
 </section>
 
 <footer>
