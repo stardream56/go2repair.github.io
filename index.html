@@ -1,8 +1,127 @@
 <!DOCTYPE html>
-<html>
-<head><title>Go2Repair</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Go2Repair | Local Repairs You Can Trust</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+    }
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
 <body>
-  <h1>Welcome to Go2Repair!</h1>
-  <p>This site is now live 🚀</p>
+
+<header>
+  <h2>Go2Repair</h2>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.facebook.com/Go2Repair" target="_blank">Facebook</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Fast, Local & Trusted Repairs</h1>
+  <p>We fix phones, consoles, bikes, watches, custom ideas – right here in your community.</p>
+  <a href="#contact" class="button">Book a Repair</a>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <h3>📱 Phone Repairs</h3>
+      <p>Cracked screens, charging issues, battery swaps and more.</p>
+    </div>
+    <div class="service">
+      <h3>🎮 Console Repairs Deep clean</h3>
+      <p>PlayStation, Xbox, Nintendo – hardware faults and HDMI fixes Fan replacement.</p>
+    </div>
+    <div class="service">
+      <h3>🚴 Bicycle Repairs</h3>
+      <p>Brake adjustments, tube replacements, and general maintenance.</p>
+    </div>
+    <div class="service">
+      <h3>⏱ Watch Repairs</h3>
+      <p>Battery changes, strap adjustments, and minor servicing water proffing seal & gasket.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Email:</strong> contact@go2repair.co.uk</p>
+  <p><strong>Facebook:</strong> <a href="https://www.facebook.com/Go2Repair" target="_blank">facebook.com/Go2Repair</a></p>
+  <p><strong>Location:</strong> Local drop off or postal service !</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Go2Repair. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
