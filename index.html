@@ -143,13 +143,13 @@
   <nav>
     <a href="#services">Services</a>
     <a href="#contact">Email</a>
-    <a href="https://www.facebook.com/go2repair" target="_blank">Facebook</a>
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Fast, Local & Low-Cost Repairs</h1>
-  <p>We fix broken items, consoles, phones, watches, soldering, and custom projects – right here in Staines-upon-Thames.</p>
+  <h1>Fast,Local & Low-Cost Repairs</h1>
+  <p>We fix broken items, consoles, phones, watches, soldering,custom projects – right here in Staines-upon-Thames.</p>
   <a href="#contact" class="button">Book a Repair</a>
 </section>
 
@@ -176,9 +176,25 @@
 </section>
 
 <section class="section" id="contact">
-  <h2>Contact Us</h2>
+  <h2>Contact & Quote Request</h2>
+  <form action="https://formspree.io/f/xqalzpvp" method="POST">
+    <p><input type="text" name="name" placeholder="Your Name" required></p>
+    <p><input type="email" name="email" placeholder="Your Email" required></p>
+    <p>
+      <select name="repair_type" required>
+        <option value="">Select Repair Type</option>
+        <option>Phone</option>
+        <option>Console</option>
+        <option>Soldering</option>
+        <option>Watch</option>
+        <option>Other</option>
+      </select>
+    </p>
+    <p><textarea name="message" rows="5" placeholder="Describe the issue..." required></textarea></p>
+    <p><button type="submit" class="button">Submit Request</button></p>
+  </form>
   <p><strong>Email:</strong> <a href="mailto:repairs_r_us@aol.com">repairs_r_us@aol.com</a></p>
-  <p><strong>Facebook:</strong> <a href="https://www.facebook.com/go2repair" target="_blank">facebook.com/go2repair</a></p>
+  <p><strong>Facebook:</strong> <a href="https://www.facebook.com/" target="_blank">facebook.com/</a></p>
   <p><strong>Location:</strong> Staines-upon-Thames — Local drop-off or postal service available!</p>
 </section>
 
